@@ -47,6 +47,5 @@ Please see the examples for more information!
 *NOTE: Currently there are 10 different channels available and more to come! Remember every outlet can work on up to three different channels.
 Since these outlets have the special learning feature, the amount of possible unique channels are (*almost) limitless! 
 (*at least up to 2^10 = 1024 different channels)
-Althought I wouldn't bet on all of these channels being very reliable, like 0000000000 for instance!
 
 
