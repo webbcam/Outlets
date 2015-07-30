@@ -31,7 +31,7 @@ All text above must be included in any redistribution
 
 #include "Outlet.h"  //  include all channels
 
-const int DATA_PIN = 5;
+const int DATA_PIN = 4; // pin to connect to DATA pin on transmitter
 Outlet outlet(DATA_PIN); //  make a new outlet instance with
 const int CHANNEL_MAX = 10; // max range of channels
 const bool ON = true;

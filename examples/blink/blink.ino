@@ -20,7 +20,8 @@ All text above must be included in any redistribution
 
 #include "Outlet.h"  //  include all channels
 
-Outlet outlet(5); //  make a new outlet instance with
+const int DATA_PIN = 4;
+Outlet outlet(DATA_PIN); //  make a new outlet instance with
 const bool ON = true;
 const bool OFF = false;
 void setup() {
