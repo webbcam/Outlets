@@ -35,7 +35,7 @@ SOFTWARE:
 
     USE:
         You can toggle the outlet's state by calling its toggle function
-        and passing it the channel (1-5) and power state 
+        and passing it the channel (1-10) and power state 
         (true->on or false->off)
 
             i.e.
