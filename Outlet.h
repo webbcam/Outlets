@@ -32,6 +32,9 @@ class Outlet {
         void toggle(int channel, bool state);
         //  use to sync an outlet with a specific channel
         void sync(int channel); //   each outlet can remember up to 3 different channels
+        // toggles an outlet with a specific address on / off 
+        // addr is a number between 0 - 1023 (0b0000000000 - 0b1111111111)
+        void toggleAddr(int addr, bool state);
         
     private:
         int DATA_PIN;
