@@ -156,6 +156,21 @@ void Outlet::postambleOff() {
     zero();
 }
 
+// 0b0000000000 <= addr <= 0b1111111111
+void Outlet::toggleAddr(int addr, bool state)
+{
+	for (int j = 0; j < 8; j++)
+	{
+        preamble();
+		for (int i = 9; i >= 0; i--)
+		{
+			if ((addr >> i) & 1) one();
+			else zero();
+		}
+        state ? postambleOn() : postambleOff();
+	}
+}
+
 /************     ETEKCITY CHANNELS     ************/
 //  0101010011
 void Outlet::ch1() {
